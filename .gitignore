@@ -16,3 +16,6 @@ vectorstore/
 *.pyc
 __pycache__/
 .DS_Store
+
+# Environment
+.python-version
