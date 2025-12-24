@@ -6,12 +6,12 @@ The system follows a standard Retrieval-Augmented Generation (RAG) architecture,
 
 ```mermaid
 graph LR
-    A[Sanskrit Documents] --> B(Ingestion Pipeline);
-    B --> C{Vector Store (FAISS)};
+    A[Sanskrit Documents] --> B("Ingestion Pipeline");
+    B --> C{"Vector Store (FAISS)"};
     D[User Query] --> E(Retriever);
     C --> E;
     E --> F[Relevant Context];
-    F --> G(Generator (LLM));
+    F --> G("Generator (LLM)");
     D --> G;
     G --> H[Response];
 ```
